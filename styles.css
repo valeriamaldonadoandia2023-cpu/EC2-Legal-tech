@@ -1,0 +1,294 @@
+/* ==========================================
+   HOJA DE ESTILOS EXTERNA - PERFIL VALERIA
+   Paleta: Rosa Pastel, Crema y Chocolate
+   ========================================== */
+
+/* 1. RESET Y CONFIGURACIÓN BÁSICA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FDF8F9; /* Rosa/Crema suave de fondo */
+    color: #3D2B35;           /* Texto café/chocolate para contraste legible */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. BARRA DE NAVEGACIÓN */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #F3D2DF;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #8C4060;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #614050;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #B8507A;
+}
+
+/* 3. ENCABEZADO / HERO */
+.hero {
+    background-color: #F9EBEF; /* Fondo rosa pastel sutil */
+    border-bottom: 1px solid #E8C3D2;
+    padding: 60px 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: #F0A8C0;
+    color: #4A1528;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    color: #4A1E31;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #9E5272;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #5C4550;
+    font-size: 1rem;
+}
+
+/* BOTONES */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #B8507A;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #9C3D63;
+}
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #8C4060;
+    border: 1px solid #DDA8BC;
+}
+
+.btn-secondary:hover {
+    background-color: #F5E6EC;
+}
+
+/* 4. SECCIONES GENERALES */
+.section {
+    padding: 50px 0;
+    border-bottom: 1px solid #F0D8E2;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    color: #4A1E31;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #B8507A;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+/* REJILLA DE TARJETAS (GRID) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #F0D5E0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.card-highlight {
+    border-left: 4px solid #B8507A;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #B8507A;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #3D2B35;
+    margin: 5px 0;
+}
+
+.institution {
+    font-weight: 600;
+    color: #8C526B;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.card-list {
+    padding-left: 20px;
+    color: #5C4550;
+    font-size: 0.95rem;
+}
+
+.card-list li {
+    margin-bottom: 5px;
+}
+
+.card-text {
+    color: #5C4550;
+    font-size: 0.95rem;
+}
+
+/* 5. SECCIÓN APTITUDES */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    background-color: #FFFFFF;
+    border: 1px solid #E8C0D0;
+    color: #6B354D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* 6. SECCIÓN CONTACTO */
+.section-contact {
+    text-align: center;
+    background-color: #F9EBEF;
+    border-radius: 16px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    border: 1px solid #E8C3D2;
+}
+
+.section-contact h2 {
+    color: #4A1E31;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    font-weight: 500;
+    color: #5C4550;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-actions {
+    margin-top: 20px;
+}
+
+/* 7. PIE DE PÁGINA */
+.footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #8C6A78;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVO PARA CELULARES */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
